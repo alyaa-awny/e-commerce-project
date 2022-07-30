@@ -1,0 +1,75 @@
+ e-commerce app
+
+
+ user => name, email, password, age, profile Image 
+ products => categories-name-quantity- price-description (image-colors-size) - addedby(admin)- 
+
+
+ user:
+ register- login -logout- editprofile- changepassword- forget password,delet account, deactivate account 
+ add to cart- del from cart- edit my cart
+
+
+
+admin features ==>
+add products- delete products- update products
+show orders
+
+
+users 
+(id- name- password-email)
+  register-login -logout- editprofile- changepassword
+ show products- order products-show categories- add to cart
+
+relations 
+
+carts  ==> userId, productId
+orders  ==> userId,ProductId,cartsId
+
+one product added by many user
+one user added one product 
+
+one : many 
+
+
+carts need a new model or not???
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- saller  (id- name- password-email)
+  register-login -logout- editprofile- changepassword
+ add products- delete products- update products
+  show orders - profits -->
+
+
+
+
