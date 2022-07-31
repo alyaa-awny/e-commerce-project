@@ -1,9 +1,9 @@
  const mongoose      = require("mongoose");
  const validator     = require("validator")
  const bcrypt        = require("bcryptjs")
- const otpGenerator  = require("otp-generator")
+ const otpGenerator = require ("otp-generator")
  const jwt           = require("jsonwebtoken")
- const userSchema    = mongoose.schema ({
+ const userSchema    = mongoose.Schema ({
 
         name:{
             type: String,
@@ -82,7 +82,7 @@
     const userData = await User.findOne({email})
     if(!userData)throw new Error ("invalid email")
     const isMatched = await bcrypt.compare(password,userData.password)
-    if(!isMatched) throw new Error ("invalid password")
+    if(!isMatched) throw new Error ("invalid password") 
     return userData
 }
 
