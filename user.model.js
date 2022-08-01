@@ -108,6 +108,11 @@ userSchema.methods.generateToken = async function(){
        return userData.otp
 
    }  
+   userSchema.virtual("allProducts", {
+    ref:"Product",
+    localField:"_id",
+    foreignField:"addedby"
+})
 
 const User = mongoose.model("User", userSchema)
 
